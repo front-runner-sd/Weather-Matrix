@@ -49,7 +49,7 @@ Hosted Here : https://weather-matrix.netlify.app/
 4. Searched location's co-ordinates
  
 ## Images of the UI
-![kolkata](https://github.com/front-runner-sd/Weather-Matrix/assets/91823106/2edbd747-61e0-442e-a641-d994cdff0e7a)
+![kolkata](https://github.com/front-runner-sd/Weather-Matrix/assets/91823106/2edbd747-61e0-442e-a641-d994cdff0e7a)<br>
 ![glasgow](https://github.com/front-runner-sd/Weather-Matrix/assets/91823106/322d475a-f2c6-4e83-84fe-f200a33e5f63)
 
 ## Only spelling needed to be correct
@@ -57,7 +57,6 @@ Hosted Here : https://weather-matrix.netlify.app/
 
 ## Responsiveness
 ![Mobile](https://github.com/front-runner-sd/Weather-Matrix/assets/91823106/c5fcb7c5-97be-4881-b3ec-20336b2a9ebb)
-![Mobile 2](https://github.com/front-runner-sd/Weather-Matrix/assets/91823106/0bfe498b-b9bf-46e7-b450-e316c581f8f6)
 
 ## Error Handling 
 ![Error](https://github.com/front-runner-sd/Weather-Matrix/assets/91823106/5c00f7ec-a3d1-4b73-8e26-83a7866afc29)
