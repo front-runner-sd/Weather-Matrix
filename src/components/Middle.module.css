@@ -1,0 +1,397 @@
+.Middle{
+    background-color: #ffffffd7;
+    flex-grow: 3;
+    flex-basis: 68%;  /* eta e oi grid er koto percent gayga nia thakbe setar moto */
+    height: auto;
+}
+
+.dateAndSearch{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #dbdbdb;
+}
+.i_ele{
+    position:absolute;
+    font-size: 2rem;
+    padding-right: 42rem;
+    padding-top: 7.2rem;
+    color: #7c7c7c;
+    z-index: 99;
+}
+input.input{
+    background-color: #f5f5f5;
+    position: relative;
+    height: 45px;
+    margin-top: 6rem;
+    margin-left: 6rem;
+    width: 60%;
+    border-radius: 5px;
+    border: 0px solid ;
+    font-size: 2rem;
+    padding-left: 7rem;
+    margin-right: 2rem;
+}
+input.input:focus{
+    outline: 2px solid #9eb1ff;
+}
+.date{
+    margin-top: 4rem;
+    margin-left: 2.5rem;
+}
+.upperDate{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.lowerDate{
+    color: #7c7c7c;
+    font-size: 2rem;
+}
+
+.overview{
+    font-size: 1.9rem;
+    padding-left: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.cardIcon{
+    grid-row-start: span 2;
+    color: #1b72ff;
+    font-size: 2.8rem;
+    align-self: center;
+    padding-left: .9rem;
+}
+.cardIcon2{
+    grid-row-start: span 2;
+    color: #00d31c;
+    font-size: 2.8rem;
+    align-self: center;
+    justify-self: end;
+    padding-right: 1.5rem;
+}
+.cardEle{
+    display: grid;
+    grid-template-columns: 25% 40% 35%;
+    grid-template-rows: 30% 70%;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+}
+.cardEle:hover{
+    cursor: pointer;    
+    background-color : #1b72ffe5;
+    transform: scale(1.04);
+    -webkit-box-shadow: 13px 12px 9px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 12px 9px -14px rgba(0,0,0,0.75);
+    box-shadow: 13px 12px 9px -14px rgba(0,0,0,0.75);
+    transition: transform 0.5s ease;
+}
+.cardEle:hover{
+    .cardIcon{
+        color: #eeeeee;
+    }
+    .cardEleAbout{
+        color: #eeeeee;
+    }
+}
+.cardEleAbout{
+    font-size: 1.4rem;
+    color: #969696;
+}
+.cardEleRes{
+    font-size: 3.3rem;
+    font-weight: 800;
+    color:#14204f;
+}
+.gap{
+    margin-top: 1.5rem;
+}
+.airCardContainer{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+.airEle{
+    min-width: 186px;
+    grid-template-columns: 25% 40% 35%;
+    flex-grow: 2;
+    background-color: rgba(174, 60, 255, 0.103);
+    .cardEleRes{
+        font-size: 3rem;
+        color: #14204f;
+    }
+    .cardIcon{
+        font-size: 2.5rem;
+        justify-self: flex-start;
+        padding-left: 0rem;
+        color :rgba(174, 60, 255, 0.886);
+    }
+    .cardIcon2{
+        padding: 0;
+        font-size: 2.5rem;
+        padding-left: 1rem;
+        color: #00d31c;
+    }
+    .cardEleRes{
+        padding-left: 1rem;
+        color: #2c1142;
+    }
+    .cardEleAbout{
+        padding-left: 1rem;
+    }
+}
+.airEle:hover{
+    background-color:rgba(174, 60, 255, 0.886);
+}
+.airEleQ{
+    min-width: 385px;
+    background-color: rgba(174, 60, 255, 0.103);
+    flex-grow: 2;
+    .cardEleRes{
+        font-size: 3rem;
+        color: #2c1142;
+    }
+    .cardIcon{
+        color :rgb(174, 60, 255);
+    }
+    .cardIcon2{
+        color: #00d31c;
+    }
+    
+}
+.airEleQ:hover{
+    background-color:rgba(174, 60, 255, 0.886);
+}
+.chart{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left:4rem ;
+    height: 32rem;
+    width: 92%;
+    background-color: #fbfbfb;
+    border-radius: 15px;
+    cursor:pointer;
+}
+.chartDiv{
+    padding-bottom: 2rem;
+}
+.chart2{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left:4rem ;
+    height: 32rem;
+    width: 92%;
+    background-color:rgba(238, 169, 255, 0.366);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.chart2Overview{
+    font-size: 1.9rem;
+    padding-left: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.chart3{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left:4rem ;
+    height: 32rem;
+    width: 92%;
+    background-color:rgba(227, 188, 255, 0.366);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.searchButton {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #3280ff 0, #3280ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    margin-top:5.5rem;
+    right: 3rem;
+  }
+  
+  .searchButton:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .searchButton:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+@media screen and (max-width: 1400px) {
+    .cardEleRes{
+        font-size: 3rem;
+    }
+    .cardEleAbout{
+        font-size: 1.2rem;
+    }
+    .i_ele{
+        padding-right: 35rem;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .i_ele{
+        position:absolute;
+        padding-right: 30rem;
+        padding-top: 7.2rem;
+    }
+    .cardEleRes{
+        font-size: 2.6rem;
+    }
+    .airEle{
+        .cardEleRes{
+            font-size: 2.8rem;
+        }
+    }
+    .airEle:last-child{
+        /* visibility: hidden; */
+        display:none;
+    }
+    .cardEle:last-child{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .i_ele{
+        padding-right: 23rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .i_ele{
+        padding-right: 20rem;
+    }
+    .lowerDate{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 950px) {
+
+    .upperDate{
+        font-size: 2.5rem;
+    }
+    .airEle:last-child{
+        display:grid;
+    }
+    .airEle:last-child{
+        visibility: visible;
+    }
+    .i_ele{
+        padding-top: 5.5rem;
+    }
+    input.input{
+        margin-top: 4.5rem;
+    }
+    .searchButton{
+        margin-top:2.8rem;
+    }
+}
+@media screen and (max-width: 900px) {
+  .Middle{
+    flex-grow: 1;
+  }
+  .i_ele{
+    padding-right: 9rem;
+    padding-top: 4rem;
+}
+input.input{
+    margin-top: 3rem;
+}
+.date{
+    margin-top: 3rem;
+}
+.lowerDate{
+    white-space: nowrap;
+}
+.chart{
+    margin-left:1.5rem;
+}
+.chart2{
+    margin-left:1.5rem;
+}
+.chart3{
+    margin-left:1.5rem;
+}
+
+}
+@media screen and (max-width: 700px) {
+    .i_ele{
+        padding-right: 19rem;
+    }
+    .chart{
+        margin-left:2.5rem;
+    }
+    .chart2{
+        margin-left:2.5rem;
+    }
+    .chart3{
+        margin-left:2.5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .i_ele{
+        padding-right: 8rem;
+    }
+    input.input{
+        margin-left: 2.5rem;
+        font-size: 20px;
+        /* padding-bottom: 2rem; */
+    }
+    .overview{
+        padding-right: 4rem
+    }
+    .cardEle{
+        background-color: rgba(93, 85, 255, 0.048);    
+    }
+    .airEle{
+        background-color: rgba(184, 85, 255, 0.048);    
+    }    
+    .airEleQ{
+        background-color: rgba(184, 85, 255, 0.048);    
+    }
+    .chart{
+        margin-left: 2.5rem;
+    }
+    .chart2{
+        margin-left: 2.5rem;
+        background-color: #fbfbfb;
+    }
+    .chart3{
+        margin-left: 2.5rem;
+        background-color:#fbfbfb;
+    }
+  }
