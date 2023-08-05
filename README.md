@@ -4,7 +4,7 @@ It is a <strong>responsive</strong> & <strong>user-friendly</strong> weather det
 User can be able to get 10 different weather components and Air quality details and Weather analysis graphs and other astronomy related details.
 </p>
 
-Hosted Here : https://doggy-search-by-soudip-das.netlify.app/
+Hosted Here : https://weather-matrix.netlify.app/
 
 ## Weather Details include :
 1. Current temperature 🌡️
