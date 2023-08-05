@@ -23,8 +23,6 @@ import { useState,useEffect } from "react";
 const RightSide = (props) => {
   
   const [fullName, setFullName] = useState(' ');
-  console.log('R');
-  console.count();
   if(props.astroData.astronomy.astro.sunrise==='--'){ 
     var sunrise24 = props.astroData.astronomy.astro.sunrise;
     var sunset24= props.astroData.astronomy.astro.sunset;
@@ -182,7 +180,7 @@ const RightSide = (props) => {
 
   async function getForecast(){
     if(locationObject && lat!=='--'){ 
-     var forecastJson = await axios.get(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${props.apiId}`);
+     var forecastJson = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${props.apiId}`);
      var forecastData = forecastJson.data.list;
      console.log("f");
      let tempArr=['','','','',''];

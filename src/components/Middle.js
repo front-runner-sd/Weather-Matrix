@@ -7,8 +7,6 @@ import LineChart from "./LineChart";
 import LineChart2 from "./LineChart2";
 import LineChart3 from "./LineChart3";
 const Middle = (props) => {
-  console.log('M');
-  console.count();
   const [maxMin,setMaxMin] = useState({max:40,min:20});
   const [maxMin2,setMaxMin2] = useState({max:2,min:0}); 
   const [maxMin3,setMaxMin3] = useState({max:100,min:50}); 
@@ -139,7 +137,7 @@ const Middle = (props) => {
     const search = async()=>{
       try{
         props.parentLoadingStart(true);
-        const res_coordinates = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${locationName}&limit=1&appid=${props.apiId}`);
+        const res_coordinates = await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${locationName}&limit=1&appid=${props.apiId}`);
 
         if(res_coordinates.data.length ==0){
             errorHandler();
@@ -186,10 +184,10 @@ const Middle = (props) => {
 
 
 
-          const locationJson = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${locationName}&limit=1&appid=${props.apiId}`); 
+          const locationJson = await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${locationName}&limit=1&appid=${props.apiId}`); 
           props.sendLocationToParent(locationJson.data);
 
-          const forecastJson = await axios.get(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${props.apiId}`);
+          const forecastJson = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${props.apiId}`);
           const forecastData = forecastJson.data.list;
 
           const time = ['','','','','','','','','','','','','','','','',''];
