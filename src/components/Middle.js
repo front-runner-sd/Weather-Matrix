@@ -472,7 +472,7 @@ const Middle = (props) => {
                         <FontAwesomeIcon className={styles.cardIcon} icon={faEye}/>
                         <h3 className={styles.cardEleAbout}>Visibility</h3>
                         <FontAwesomeIcon className={styles.cardIcon2} style={{color: visi<visiBase? "#FF0000":"#00FF00"}} icon={visiBase<visi?faArrowUp:faArrowDown}/>
-                        <h3 className={styles.cardEleRes}>{visi} {min==='--'?' ':'°C'}</h3>
+                        <h3 className={styles.cardEleRes}>{visi} {min==='--'?' ':'KM'}</h3>
                     </div>
                     <div className={styles.cardEle}>
                         <FontAwesomeIcon className={styles.cardIcon} icon={faCloud}/>
