@@ -182,7 +182,6 @@ const RightSide = (props) => {
     if(locationObject && lat!=='--'){ 
      var forecastJson = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${props.apiId}`);
      var forecastData = forecastJson.data.list;
-     console.log("f");
      let tempArr=['','','','',''];
      tempArr[0]=forecastData[8].weather[0].description;
      tempArr[1]=forecastData[16].weather[0].description;
