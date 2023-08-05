@@ -102,9 +102,11 @@ const RightSide = (props) => {
       else if(moonsetIntTime==='08')
       moonsetIntTime=32;
       else if(moonsetIntTime==='09')
-      moonsetIntTime=26;
+      moonsetIntTime=33;
       else if(moonsetIntTime==='10')
-      moonsetIntTime=26;
+      moonsetIntTime=34;
+      else if(moonsetIntTime==='11')
+      moonsetIntTime=35;
       var moonsetAgo = currentIntTime - moonsetIntTime;
     }
      else
