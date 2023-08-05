@@ -89,6 +89,22 @@ const RightSide = (props) => {
       moonsetIntTime=25;
       else if(moonsetIntTime==='02')
       moonsetIntTime=26;
+      else if(moonsetIntTime==='03')
+      moonsetIntTime=27;
+      else if(moonsetIntTime==='04')
+      moonsetIntTime=28;
+      else if(moonsetIntTime==='05')
+      moonsetIntTime=29;
+      else if(moonsetIntTime==='06')
+      moonsetIntTime=30;
+      else if(moonsetIntTime==='07')
+      moonsetIntTime=31;
+      else if(moonsetIntTime==='08')
+      moonsetIntTime=32;
+      else if(moonsetIntTime==='09')
+      moonsetIntTime=26;
+      else if(moonsetIntTime==='10')
+      moonsetIntTime=26;
       var moonsetAgo = currentIntTime - moonsetIntTime;
     }
      else
@@ -215,7 +231,6 @@ const RightSide = (props) => {
       tempArr3[2]=Math.round(forecastData[24].main.feels_like-273.15);
       tempArr3[3]=Math.round(forecastData[34].main.feels_like-273.15);
       tempArr3[4]=Math.round(forecastData[39].main.feels_like-273.15);
-      // console.log(tempArr3);
 
       updateForecastTemp(tempArr3);
     }
