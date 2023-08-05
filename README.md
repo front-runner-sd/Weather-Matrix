@@ -1,6 +1,5 @@
-
-# Weather-Matrix 🌤️![logo192](https://github.com/front-runner-sd/Weather-Matrix/assets/91823106/c6541167-8123-407c-b06b-bf6265230daf)
-
+![logo192](https://github.com/front-runner-sd/Weather-Matrix/assets/91823106/c6541167-8123-407c-b06b-bf6265230daf)
+# Weather-Matrix 🌤️
 <p>
 It is a <strong>responsive</strong> & <strong>user-friendly</strong> weather details and analysis application ⚒️ . <br>
 User can be able to get 10 different weather components and Air quality details and Weather analysis graphs and other astronomy related details.
