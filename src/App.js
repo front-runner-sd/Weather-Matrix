@@ -147,7 +147,7 @@ function App() {
         <meta name="viewport" content="width=device-width"/>
       </Helmet>
       <div className={styles.loader} style={{display:!isLoading?"none":"flex"}}>
-      <HashLoader color={"blue"}/>
+      <HashLoader color={"#013d73"}/>
       </div>
       <div className={styles.mainContainer}>
         <Middle apiId={apiKey} apiId2={apiKey2} weatherData={updateWeather} parentLoadingStart={loadingStart} airPollutionData={updateAir} uvData={updateUv} sendWeatherToParent={updateWeatherHandler} sendAirToParent={updateAirHandler} sendUvToParent={updateUvHandler} sendAstroToParent={updateAstroHandler} sendLocationToParent={updateLocationHandler}/>
