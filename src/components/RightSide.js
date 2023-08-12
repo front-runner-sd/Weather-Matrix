@@ -289,9 +289,9 @@ const RightSide = (props) => {
       <h2 className={styles.astroHeading}>Location Coordinates</h2>
       <div className={styles.coordinates}>
         <h3>Latitude : </h3>
-        <h3>{lat>0?lat:-lat}° {lat>0?'N':'S'}</h3>
+        <h3>{lat>0?lat.toFixed(6):-lat.toFixed(6)}° {lat>0?'N':'S'}</h3>
         <h3>Longitude : </h3>
-        <h3>{lon>0?lon:-lon}° {lon>0?'E':'W'}</h3>
+        <h3>{lon>0?lon.toFixed(6):-lon.toFixed(6)}° {lon>0?'E':'W'}</h3>
       </div>
       </div>
       <div className={styles.astronomy}>
