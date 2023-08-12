@@ -80,7 +80,7 @@ input.input:focus{
     display: grid;
     grid-template-columns: 25% 40% 35%;
     grid-template-rows: 30% 70%;
-    background-color: #f5f5f5;
+    background-color: #4fbfff80;
     padding: 2rem;
     border-radius: 8px;
 }
@@ -122,7 +122,7 @@ input.input:focus{
     min-width: 186px;
     grid-template-columns: 25% 40% 35%;
     flex-grow: 2;
-    background-color: rgba(174, 60, 255, 0.103);
+    background-color: rgba(174, 60, 255, 0.096);
     .cardEleRes{
         font-size: 3rem;
         color: #14204f;
