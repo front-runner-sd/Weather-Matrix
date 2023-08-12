@@ -80,7 +80,7 @@ input.input:focus{
     display: grid;
     grid-template-columns: 25% 40% 35%;
     grid-template-rows: 30% 70%;
-    background-color: #4fa1ff10;
+    background-color: #4fa1ff14;
     padding: 2rem;
     border-radius: 8px;
 }
