@@ -26,9 +26,9 @@ function LineChart2({ chartData,maxMin3 }) {
           color: '#58005b',
         },
         grid: {
-          color: '#f5e7ff',
-          borderColor: 'grey',
-          tickColor: 'grey'
+          color: '#f8efff',
+          borderColor: '#00357b',
+          tickColor: '#00357b'
         },
         ticks: {
           color: '#58005b',
@@ -38,7 +38,7 @@ function LineChart2({ chartData,maxMin3 }) {
       },
       y: {
         border: {
-          color: '#f5e7ff',
+          color: 'rgba(219, 4, 47, 0)',
         },
         ticks: {
           color: '#58005b',

@@ -24,26 +24,26 @@ function LineChart2({ chartData,maxMin2 }) {
     scales: {
       x: {
         border: {
-          color: '#58005b',
+          color: '#00357b',
           // width:3
         },
         grid: {
-          color: '#f5e7ff',
+          color: '#e9e9e9',
           borderColor: 'grey',
           tickColor: 'grey'
         },
         ticks: {
-          color: '#58005b',
+          color: '#00357b',
           textStrokeColor:'#00357b',
           textStrokeWidth:0.5,
         }
       },
       y: {
         border: {
-          color: '#f5e7ff',
+          color: '#e0e0e0',
         },
         ticks: {
-          color: '#58005b',
+          color: '#00357b',
           textStrokeColor:'#00357b',
           textStrokeWidth:0.5,
           crossAlign:'far',

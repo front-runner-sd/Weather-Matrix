@@ -11,21 +11,29 @@
     padding-bottom: 3rem;
     border-bottom: 2px solid #dbdbdb;
 }
+.test{
+    position: relative;
+    flex-basis:58%;
+    cursor: auto;
+    margin-left: 1rem;
+}
+
 .i_ele{
     position:absolute;
     font-size: 2rem;
-    padding-right: 42rem;
-    padding-top: 7.2rem;
+    /* padding-right: 42rem;
+    padding-top: 7.2rem; */
     color: #7c7c7c;
     z-index: 99;
+    margin-top:7.2rem;
+    padding-left: 2.4rem;
 }
 input.input{
     background-color: #f5f5f5;
     position: relative;
     height: 45px;
     margin-top: 6rem;
-    margin-left: 6rem;
-    width: 60%;
+    width: 95%;
     border-radius: 5px;
     border: 0px solid ;
     font-size: 2rem;
@@ -176,7 +184,7 @@ input.input:focus{
     margin-left:4rem ;
     height: 32rem;
     width: 92%;
-    background-color: #fbfbfb;
+    background-color: rgba(219, 4, 47, 0.025);
     border-radius: 15px;
     cursor:pointer;
 }
@@ -190,7 +198,8 @@ input.input:focus{
     margin-left:4rem ;
     height: 32rem;
     width: 92%;
-    background-color:rgba(238, 169, 255, 0.366);
+    /* background-color:rgba(238, 169, 255, 0.366); */
+    background-color:#f8f8f8;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -207,7 +216,7 @@ input.input:focus{
     margin-left:4rem ;
     height: 32rem;
     width: 92%;
-    background-color:rgba(227, 188, 255, 0.366);
+    background-color:#f7edffe3;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -259,16 +268,8 @@ input.input:focus{
     .cardEleAbout{
         font-size: 1.2rem;
     }
-    .i_ele{
-        padding-right: 35rem;
-    }
 }
 @media screen and (max-width: 1300px) {
-    .i_ele{
-        position:absolute;
-        padding-right: 30rem;
-        padding-top: 7.2rem;
-    }
     .cardEleRes{
         font-size: 2.6rem;
     }
@@ -286,14 +287,9 @@ input.input:focus{
     }
 }
 @media screen and (max-width: 1200px) {
-    .i_ele{
-        padding-right: 23rem;
-    }
+
 }
 @media screen and (max-width: 1100px) {
-    .i_ele{
-        padding-right: 20rem;
-    }
     .lowerDate{
         font-size: 1.5rem;
     }
@@ -309,9 +305,6 @@ input.input:focus{
     .airEle:last-child{
         visibility: visible;
     }
-    .i_ele{
-        padding-top: 5.5rem;
-    }
     input.input{
         margin-top: 4.5rem;
     }
@@ -323,15 +316,15 @@ input.input:focus{
   .Middle{
     flex-grow: 1;
   }
-  .i_ele{
-    padding-right: 9rem;
-    padding-top: 4rem;
-}
+
 input.input{
     margin-top: 3rem;
 }
 .date{
     margin-top: 3rem;
+}
+.i_ele{
+    margin-top: 4.3rem;
 }
 .lowerDate{
     white-space: nowrap;
@@ -348,9 +341,6 @@ input.input{
 
 }
 @media screen and (max-width: 700px) {
-    .i_ele{
-        padding-right: 19rem;
-    }
     .chart{
         margin-left:2.5rem;
     }
@@ -362,13 +352,16 @@ input.input{
     }
 }
 @media screen and (max-width: 500px) {
-    .i_ele{
-        padding-right: 8rem;
-    }
     input.input{
-        margin-left: 2.5rem;
+        margin-left: 2rem;
         font-size: 20px;
+        padding-left: 4.5rem;
         /* padding-bottom: 2rem; */
+    }
+    .i_ele{
+        font-size: 18px;
+        margin-left: 1rem;
+        /* padding-right: 2rem; */
     }
     .overview{
         padding-right: 4rem

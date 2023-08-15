@@ -276,7 +276,7 @@ const RightSide = (props) => {
           <FontAwesomeIcon className={styles.astroCardIcon} icon={faMoon} />
           <h3 className={styles.astroCardEleAbout}>Moonrise</h3>
           <h3 className={styles.astroCardEleTime}>{moonriseAgo<0?0-moonriseAgo:moonriseAgo} hours {moonriseAgo<0?"left":"ago"}</h3>
-          <h3 className={styles.astroCardEleTime2}>{moonrise24}</h3>
+          <h3 className={styles.astroCardEleTime2}>{moonrise24==='NaN mo'?'--':moonrise24}</h3>
         </div>
         <div className={styles.astroCardEle}>
           <FontAwesomeIcon className={styles.astroCardIcon} icon={faStar} />
