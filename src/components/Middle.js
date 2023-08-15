@@ -211,8 +211,8 @@ const Middle = (props) => {
                 label: "Temprature graph",
                 data:tempreture,
                 fill: true,
-                backgroundColor: '#9aaecbda',
-                borderColor: "#00357b",
+                backgroundColor: 'rgba(255, 4, 38,0.25)',
+                borderColor: "#db042f",
                 borderWidth: 3,
                 tension:0.4,
               },
@@ -233,8 +233,8 @@ const Middle = (props) => {
               {
                 data:rain,
                 fill: true,
-                backgroundColor: '#af00b57e',
-                borderColor: "#58005b",
+                backgroundColor: 'rgba(0, 69, 161,0.45)',
+                borderColor: "#00357b",
                 borderWidth: 3,
                 tension:0.4,
               },
@@ -248,7 +248,7 @@ const Middle = (props) => {
           {
             humid[i]=forecastData[i].main.humidity;
           }     
-          const maxEle3 = Math.max(...humid)+5;
+          const maxEle3 = (Math.max(...humid)+5)%100;
           const minEle3 = Math.min(...humid)-5;
           setUserData3({
             labels: time,
@@ -256,7 +256,7 @@ const Middle = (props) => {
               {
                 data:humid,
                 fill: true,
-                backgroundColor: 'rgba(174, 60, 255, 0.449)',
+                backgroundColor: 'rgba(184, 84, 255, 0.5)',
                 borderColor: "#58005b",
                 borderWidth: 3,
                 tension:0.4,
@@ -423,8 +423,10 @@ const Middle = (props) => {
                     <div className={styles.upperDate}>{day}</div>
                     <div className={styles.lowerDate}>{`${month} ${date}, ${year}`}</div>
                 </div>
+                <div className={styles.test}>
                 <FontAwesomeIcon className={styles.i_ele} icon={faSearch} />
                 <input type="text" id="input" className={styles.input} placeholder="type city name here"  onChange={autoComplete} onKeyDown={doSearch}></input>
+                </div>
                 <button className={styles.searchButton} onClick={search}><FontAwesomeIcon icon={faSearch} /></button>
             </div>
             <div  className={styles.middleMiddle}>
@@ -556,15 +558,16 @@ const Middle = (props) => {
                </div>
             </div>
             <div className={styles.chartDiv}>
-            <h2 className={styles.chart2Overview}> Temprature Forecast Graph</h2>
-               <div className={styles.chart}>
-                <LineChart chartData={userData} maxMin={maxMin}/>
+
+               <h2 className={styles.chart2Overview}> Rain Forecast Graph</h2>
+               <div className={styles.chart2}>
+                <LineChart2 chartData={userData2} maxMin2={maxMin2}/>
                </div>
             </div>
             <div className={styles.chartDiv}>
-            <h2 className={styles.chart2Overview}> Rain Forecast Graph</h2>
-               <div className={styles.chart2}>
-                <LineChart2 chartData={userData2} maxMin2={maxMin2}/>
+            <h2 className={styles.chart2Overview}> Temprature Forecast Graph</h2>
+               <div className={styles.chart}>
+                <LineChart chartData={userData} maxMin={maxMin}/>
                </div>
             </div>
         </div>

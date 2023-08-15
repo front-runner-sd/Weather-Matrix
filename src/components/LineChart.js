@@ -24,17 +24,17 @@ function LineChart({ chartData,maxMin }) {
     scales: {
       x: {
         border: {
-          color: '#00357b',
+          color: '#8e021e',
           // width:3
         },
         grid: {
           color: '#fbfbfb',
           borderColor: 'grey',
-          tickColor: 'grey'
+          tickColor: '#ff4a62'
         },
         ticks: {
-          color: '#00357b',
-          textStrokeColor:'#00357b',
+          color: '#8e021e',
+          textStrokeColor:'#8e021e',
           textStrokeWidth:0.5,
         }
       },
@@ -43,8 +43,8 @@ function LineChart({ chartData,maxMin }) {
           color: '#fbfbfb',
         },
         ticks: {
-          color: '#00357b',
-          textStrokeColor:'#00357b',
+          color: '#8e021e',
+          textStrokeColor:'#8e021e',
           textStrokeWidth:0.5,
           crossAlign:'far',
           callback: function(value) {
