@@ -425,7 +425,7 @@ const Middle = (props) => {
                 </div>
                 <div className={styles.test}>
                 <FontAwesomeIcon className={styles.i_ele} icon={faSearch} />
-                <input type="text" id="input" className={styles.input} placeholder="type city name here"  onChange={autoComplete} onKeyDown={doSearch}></input>
+                <input type="text" id="input" className={styles.input} placeholder="search a city"  onChange={autoComplete} onKeyDown={doSearch}></input>
                 </div>
                 <button className={styles.searchButton} onClick={search}><FontAwesomeIcon icon={faSearch} /></button>
             </div>
